@@ -196,3 +196,39 @@ button:hover {
     font-size: 14px; /* Smaller button text */
   }
 }
+
+.thank-you-slide {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  width: 60%;
+}
+
+.thank-you-slide h2 {
+  font-size: 36px;
+  color: #000080; /* Dark blue */
+}
+
+.thank-you-slide p {
+  font-size: 18px;
+  color: #333;
+}
+
+.react-logo {
+  height: 120px;
+  margin-top: 20px;
+  animation: spin 10s infinite linear;
+}
+
+/* Animation for rotating the React logo */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

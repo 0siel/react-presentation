@@ -12,6 +12,8 @@ import AdvancedFeatureExample from "./slides/AdvancedFeatureExample";
 import ReactEcosystem from "./slides/ReactEcosystem";
 import ReactVsOthers from "./slides/ReactVsOthers";
 import Conclusion from "./slides/Conclusion";
+import ThankYouSlide from "./slides/ThankYouSlide";
+import References from "./slides/References";
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,6 +38,8 @@ function App() {
     <ReactEcosystem />,
     <ReactVsOthers />,
     <Conclusion />,
+    <ThankYouSlide />,
+    <References />,
   ];
 
   return (
