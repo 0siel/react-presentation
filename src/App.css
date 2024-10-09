@@ -20,3 +20,179 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
+.slide {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  margin: 50px auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #c0c0c0; /* Adding a silver border */
+}
+
+h1,
+h2 {
+  color: #000080; /* Blue for slide headings */
+}
+
+p,
+ul {
+  color: #333; /* Slightly dark color for body text */
+}
+
+ul {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #000080; /* Blue background for buttons */
+  color: white; /* White text on buttons */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c0c0c0; /* Silver background on hover */
+  color: #000080; /* Blue text on hover */
+}
+
+span {
+  font-weight: bold;
+  color: #000080; /* Blue for the current slide indicator */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+code-section {
+  width: 45%;
+  background-color: #c0c0c0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+pre {
+  white-space: pre-wrap;
+  color: #000080;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+.component-section {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.example-component {
+  text-align: center;
+}
+
+.example-component h3 {
+  color: #000080;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.code-section,
+.component-section {
+  width: 45%; /* Both sections take 45% of the available width on larger screens */
+  background-color: #c0c0c0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+  white-space: pre-wrap;
+  color: #000080; /* Blue color for code */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+.component-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.example-component {
+  text-align: center;
+}
+
+.example-component h3 {
+  color: #000080; /* Blue for the example component */
+}
+
+button {
+  background-color: #000080; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #c0c0c0; /* Silver on hover */
+  color: #000080;
+}
+
+/* Media query for smartphones */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Stack the sections vertically */
+  }
+
+  .code-section,
+  .component-section {
+    width: 100%; /* Sections take full width on small screens */
+    margin-bottom: 20px; /* Add some space between the sections */
+  }
+
+  pre {
+    font-size: 14px; /* Slightly smaller font for the code */
+  }
+
+  button {
+    font-size: 14px; /* Smaller button text */
+  }
+}

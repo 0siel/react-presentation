@@ -1,5 +1,17 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+
+import TitleSlide from "./slides/TitleSlide";
+import BeforeReact from "./slides/BeforeReact";
+import ReactProblems from "./slides/ReactProblems";
+import WhatIsReact from "./slides/WhatIsReact";
+import BasicFeatures from "./slides/BasicFeatures";
+import ComponentExampleSlide from "./slides/ComponentExample";
+import AdvancedFeatures from "./slides/AdvancedFeatures";
+import AdvancedFeatureExample from "./slides/AdvancedFeatureExample";
+import ReactEcosystem from "./slides/ReactEcosystem";
+import ReactVsOthers from "./slides/ReactVsOthers";
+import Conclusion from "./slides/Conclusion";
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,15 +25,17 @@ function App() {
   };
 
   const slides = [
-    <div className="slide">
-      <h1>Slide 1</h1>
-      <h2>Welcome to the react presentation</h2>
-      <p>This is the first slide. Let's learn React!</p>
-    </div>,
-    <div className="slide">
-      <h2>What is react?</h2>
-      <p>React is a JavaScript library for building user interfaces.</p>
-    </div>,
+    <TitleSlide />,
+    <BeforeReact />,
+    <ReactProblems />,
+    <WhatIsReact />,
+    <BasicFeatures />,
+    <ComponentExampleSlide />,
+    <AdvancedFeatures />,
+    <AdvancedFeatureExample />,
+    <ReactEcosystem />,
+    <ReactVsOthers />,
+    <Conclusion />,
   ];
 
   return (
@@ -31,15 +45,18 @@ function App() {
         <button onClick={goToPrev} disabled={currentSlide === 0}>
           Previous
         </button>
-        <span>{currentSlide + 1} / {slides.length}</span>
-        <button onClick={goToNext} disabled={currentSlide === slides.length - 1}>
+        <span>
+          {currentSlide + 1} / {slides.length}
+        </span>
+        <button
+          onClick={goToNext}
+          disabled={currentSlide === slides.length - 1}
+        >
           Next
         </button>
-          
-
       </div>
     </div>
-  )
+  );
 }
 
 export default App;
